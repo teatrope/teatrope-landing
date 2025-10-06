@@ -1,0 +1,44 @@
+---
+import Reviewitem from "./reviewitem.astro"
+const { t } = Astro.props;
+
+const item = t?.section?.reviews;
+---
+<div class="reviews-section">
+    <h2 class="reviews-section-title">{item?.title}</h2>
+    <div class="reviews-container">
+        <Reviewitem index="0" 
+            t={t}
+            imgpath="https://t3.ftcdn.net/jpg/02/96/71/80/360_F_296718017_z7yavasr2g737XMwi9iNcOMaAHE84w0u.jpg"
+            imgalt="Choijun Yeon, un empresario"
+        ></Reviewitem>
+        <Reviewitem index="1"
+                t={t}
+                imgpath="https://as2.ftcdn.net/jpg/02/22/88/05/1000_F_222880542_iXCNyE6Mq96aIZrIfM78V4NmcxNdPyTx.jpg"
+                imgalt="Soob Kein, un ingeniero"
+        ></Reviewitem>
+    </div>
+</div>
+
+<style>
+    .reviews-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .reviews-section-title{
+        text-align: center;
+        padding: 25px;
+        color: var(--text-color);
+    }
+
+    .reviews-section{
+        margin: 0px;
+        padding: 30px 0px;
+        background: var(--bg-secondary-color);
+    }
+
+
+</style>

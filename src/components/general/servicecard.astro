@@ -1,0 +1,35 @@
+---
+const {description} = Astro.props;
+---
+
+<div class="service-card">
+    <div class="service-card-icon">
+        <slot/>
+    </div>
+    <p> {description} </p>
+</div>
+
+<style>
+    .service-card{
+        display: inline-flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap: 10PX;
+        padding: 20px;
+    }
+    
+    .service-card-icon{
+        width: 30px;
+        color: var(--text-color);    
+    }
+
+    p {
+        color: var(--text-color);
+        font-size: 12px;
+        margin: 0px;
+        width: 60px;
+        text-align: center;
+    }
+
+</style>

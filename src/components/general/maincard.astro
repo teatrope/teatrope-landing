@@ -1,0 +1,156 @@
+---
+const {t} = Astro.props;
+import Button from "../shared/button.astro";
+import ServiceCard from "./servicecard.astro";
+import SvgIcon from "../../lib/svg/SvgIcon.astro";
+
+import TheaterSvg from "../../lib/svg/theater.svg.astro";
+import Theatre2Svg from "../../lib/svg/theatre2.svg.astro";
+
+import { mainCard } from "../../lib/linker"
+
+const home = t.section.home;
+---
+
+<div class="main-card">
+    <div class="main-card-content">
+        <h1>{home.title}</h1>
+        <p>{home.description}</p>
+        
+        <div class="main-card-buttons">
+            <Button url={mainCard.buton1} variant="color" >{home.buttons.tryNow}</Button>
+            <!-- <Button url={mainCard.button2} variant="color" >{home.buttons.learnMore}</Button> -->
+        </div>
+
+        <div class="main-services-card">
+
+            <ServiceCard description={home.features[0].description}>
+                <SvgIcon name="theater" variant="color"/>
+            </ServiceCard>
+    
+            <ServiceCard description={home.features[1].description}>
+                <SvgIcon name="calendar" variant="color"/>
+            </ServiceCard>
+
+            <ServiceCard description={home.features[2].description}>
+                <SvgIcon name="location" variant="color"/>
+            </ServiceCard>
+        
+        </div>
+    
+    </div>
+
+    <div class="main-card-image">        
+        <Theatre2Svg class="main-card-svg" alt="Teatrope" width="100%"/>
+    </div>
+
+</div>
+
+<style>
+    .main-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 60px;
+        gap: 80px;
+        overflow: hidden;
+    }
+    .main-card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 25px;
+    }  
+    .main-card-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-card-buttons{
+        display: flex;
+        align-self:baseline;
+        gap: 20px;
+    }
+
+    h1{
+        width: 450px;
+        margin: 0px;
+        color: var(--text-color);
+    }
+    p{
+        margin: 0px;
+        width: 300px;
+        color: var(--text-color);
+    }
+
+    @media screen and (max-width: 1000px) {
+        .main-card{
+            padding: 50px 40px;
+            gap: 0px;
+        }
+
+        .main-card-image{
+            width: 50%;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .main-card{
+            flex-direction: column;
+            gap: 20px;
+        }
+        .main-card-image{
+            width: 90%;
+        }
+        .main-card-content{
+            align-items: center;
+            text-align: center;
+        }
+        .main-card-buttons{
+            align-self: center;
+        }
+        h1{
+            width: 100%;
+        }
+        p{
+            width: 100%;
+        }
+        
+    }
+
+    @media screen and (max-width: 440px) {
+        .main-card{
+            padding: 30px 30px;
+            gap: 20px;
+        }
+        .main-card-content{
+            gap: 20px;
+        }
+        .main-card-buttons{
+            gap: 20px;
+        }
+        h1{
+            width: 100%;
+            font-size: 24px;
+        }
+        p{
+            width: 100%;
+            font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 370px){
+        .main-services-card{
+            visibility: hidden;
+            display: none;
+        }
+        .main-card-buttons{
+            /* display: block; */
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+</style> 

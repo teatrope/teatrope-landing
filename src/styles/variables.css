@@ -1,0 +1,46 @@
+/*=========================
+IMPORTANT: Color Code
+===========================
+[color]-100: [color] very light, close to white.
+[color]-200: [color] light, slightly darker than [color]-100.
+[color]-300: [color] light-medium, an intermediate shade.
+[color]-400: [color] medium, neither light nor dark, balanced.
+[color]-500: [color] neutral, base tone balanced between light and dark.
+[color]-600: [color] slightly dark, deeper than [color]-500.
+[color]-700: [color] dark, close to the final tone.
+[color]-800: [color] very dark, almost black.
+[color]-900: [color] almost black, the darkest tone available.
+=========================*/
+
+:root {
+    /* Gray tones (white - black) */
+    --color-white: #ffffff;
+    --color-gray-100: #E5E5E5;
+    --color-gray-200: #D9D9D9; /* color for links, currently not in use */
+    --color-gray-900: #262626;
+
+    /* Theater/Arts tones (warm reds and golds) */
+    --color-theater-100: #FDF2F2;
+    --color-theater-200: #FCE7E7;
+    --color-theater-300: #F9D1D1;
+
+    --color-theater-400: #E53E3E;
+    --color-theater-500: #C53030;
+    --color-theater-600: #9C2626;
+    
+    --color-theater-700: #742A2A;
+    --color-theater-800: #5C1E1E;
+
+    /* Gold accent colors for theater theme */
+    --color-gold-200: #F6E05E;
+    --color-gold-300: #ECC94B;
+    --color-gold-400: #D69E2E;
+    --color-gold-500: #B7791F;
+
+
+    --color-red-300: #E57373;
+    --color-yellow-300: #FFF59D;
+    --color-green-300: #81C784;
+
+    font-family: 'Inter', sans-serif;
+}

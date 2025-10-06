@@ -1,0 +1,47 @@
+---
+// Theater-themed SVG component
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" class="theater-svg">
+  <!-- Stage/Platform -->
+  <rect x="50" y="200" width="300" height="20" fill="var(--color-theater-600)" rx="10"/>
+  
+  <!-- Curtains -->
+  <path d="M 50 200 Q 100 180 150 200 L 150 120 Q 100 100 50 120 Z" fill="var(--color-theater-500)"/>
+  <path d="M 350 200 Q 300 180 250 200 L 250 120 Q 300 100 350 120 Z" fill="var(--color-theater-500)"/>
+  
+  <!-- Stage backdrop -->
+  <rect x="150" y="120" width="100" height="80" fill="var(--color-theater-700)"/>
+  
+  <!-- Spotlight -->
+  <ellipse cx="200" cy="100" rx="60" ry="30" fill="var(--color-gold-300)" opacity="0.3"/>
+  
+  <!-- Theater seats (simplified) -->
+  <rect x="80" y="250" width="15" height="10" fill="var(--color-theater-400)" rx="2"/>
+  <rect x="100" y="250" width="15" height="10" fill="var(--color-theater-400)" rx="2"/>
+  <rect x="120" y="250" width="15" height="10" fill="var(--color-theater-400)" rx="2"/>
+  <rect x="140" y="250" width="15" height="10" fill="var(--color-theater-400)" rx="2"/>
+  
+  <rect x="245" y="250" width="15" height="10" fill="var(--color-theater-400)" rx="2"/>
+  <rect x="265" y="250" width="15" height="10" fill="var(--color-theater-400)" rx="2"/>
+  <rect x="285" y="250" width="15" height="10" fill="var(--color-theater-400)" rx="2"/>
+  <rect x="305" y="250" width="15" height="10" fill="var(--color-theater-400)" rx="2"/>
+  
+  <!-- Center aisle -->
+  <rect x="190" y="240" width="20" height="30" fill="var(--color-gray-100)"/>
+  
+  <!-- Theater title area -->
+  <text x="200" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="var(--color-theater-600)">
+    Teatrope
+  </text>
+  <text x="200" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="var(--color-theater-500)">
+    Tu plataforma teatral
+  </text>
+</svg>
+
+<style>
+  .theater-svg {
+    max-width: 100%;
+    height: auto;
+  }
+</style>
