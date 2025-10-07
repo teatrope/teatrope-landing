@@ -70,5 +70,5 @@ export const footer = {
 // Others links
 
 export const icons = {
-  logo: base + "teatrope_logo.svg",
+  logo: base + "Isotipo_color.png",
 };
