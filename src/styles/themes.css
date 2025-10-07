@@ -1,18 +1,18 @@
 [data-theme='light'] {
-    --primary-color: var(--color-theater-500);
-    --primary-color-hover: var(--color-theater-400);
+    --primary-color: var(--color-button-secondary);
+    --primary-color-hover: var(--color-button-secondary);
     --tertyary-color: var(--color-gold-400);
 
-    --secondary-color: var(--color-theater-100);
+    --secondary-color: var(--color-background);
 
     --text-white: var(--color-white);
     --text-black: var(--color-gray-900);
-    --text-blue: var(--color-theater-500);
+    --text-blue: var(--color-background);
 
     --bg-color: var(--color-theater-100);
 
     --text-color: var(--color-gray-900);
-    --link-color: var(--color-theater-600);
+    --link-color: var(--color-button);
 
     --error-color: var(--color-red-300);
     --warning-color: var(--color-gold-300);
@@ -20,25 +20,25 @@
 
 
     /* Components color */
-    --bg-button-color: var(--color-white);
-    --bg-button-hover: var(--color-theater-200);
+    --bg-button-color: var(--color-button);
+    --bg-button-hover: var(--color-button);
     --select-color: var(--color-theater-500);
 
     --bg-secondary-color: var(--color-theater-100);
 }
 
 [data-theme='dark'] {
-    --primary-color: var(--color-theater-700);
-    --primary-color-hover: var(--color-theater-600);
-    --tertyary-color: var(--color-gold-400);
+    --primary-color: var(--color-background);
+    --primary-color-hover: var(--color-button);
+    --tertyary-color: var(--color-button);
 
-    --secondary-color: var(--color-theater-800);
+    --secondary-color: var(--color-background);
 
     --text-white: var(--color-white);
     --text-black: var(--color-gray-900);
     --text-blue: var(--color-theater-400);
 
-    --bg-color: var(--color-theater-800);
+    --bg-color: var(--color-button-secondary);
 
     --text-color: var(--color-white);
     --link-color: var(--color-theater-300);
@@ -52,5 +52,5 @@
     --bg-button-color: var(--color-theater-600);
     --bg-button-hover: var(--color-theater-500);
     --select-color: var(--color-theater-400);
-    --bg-secondary-color: var(--color-theater-700);
+    --bg-secondary-color: var(--color-background);
 }

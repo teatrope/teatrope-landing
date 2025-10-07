@@ -42,5 +42,9 @@ IMPORTANT: Color Code
     --color-yellow-300: #FFF59D;
     --color-green-300: #81C784;
 
+    --color-background: #161621;
+    --color-button: #F74346;
+    --color-button-secondary: #2B2B38;
+
     font-family: 'Inter', sans-serif;
 }

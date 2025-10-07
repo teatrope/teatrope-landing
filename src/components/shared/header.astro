@@ -151,7 +151,7 @@ const header = t?.header;
         left: 0;
         width: 100%;
         
-        background-color: var(--primary-color);
+        background-color: var(--color-button-secondary);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -162,7 +162,7 @@ const header = t?.header;
         transition: all 0.3s ease;
         
         /* Ensure header stays on top */
-        will-change: background-color, backdrop-filter, box-shadow;
+        will-change: backdrop-filter, box-shadow;
     }
 
     /* Smooth scroll behavior */
@@ -210,7 +210,7 @@ const header = t?.header;
         nav{
             display: none;
             position: absolute;
-            background-color: var(--primary-color);
+            background-color: var(--color-button-secondary);
             top: 100%;
             left: 0;
             width: 100%;
